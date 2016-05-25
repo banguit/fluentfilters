@@ -32,18 +32,6 @@ namespace FluentFilters.Criteria
 
         #endregion
 
-        #region Properties
-
-        public string ControllerName
-        {
-            get
-            {
-                
-            }
-        }
-
-        #endregion
-
         #region Constructor
 
         /// <summary>

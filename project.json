@@ -1,0 +1,25 @@
+﻿{
+  "title": "FluentFilters",
+  "version": "0.3.0-beta",
+  "authors": ["Dmytro Antonenko"],
+  "description": "Library for ASP.NET Core, that will add support of criterias for global action filters.",
+
+  "dependencies": {
+    "Microsoft.AspNetCore.Mvc.Core": "1.0.0-rc2-final",
+    "Microsoft.AspNetCore.Routing": "1.0.0-rc2-final",
+    "NETStandard.Library": "1.5.0-rc2-24027"
+  },
+
+  "frameworks": {
+    "netstandard1.5": {
+      "imports": "dnxcore50"
+    },
+    "netcoreapp1.0": {
+      "imports": [
+        "dotnet5.6",
+        "dnxcore50",
+        "portable-net45+win8"
+      ]
+    }
+  }
+}

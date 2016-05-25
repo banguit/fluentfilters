@@ -34,3 +34,5 @@ namespace DotNetCoreWebApp
   }
 }
 ```
+
+If you are looking for FluentFilters for ASP.NET MVC2/3, you can find them [here](http://fluentfilters.codeplex.com/)

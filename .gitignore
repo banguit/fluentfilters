@@ -4,6 +4,7 @@
 
 /.git
 /.vs
-/bin/Debug
+/bin
 /obj
 /project.lock.json
+

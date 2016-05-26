@@ -21,15 +21,15 @@ namespace DotNetCoreWebApp
         {
           // Example of using predefined FluentFilters criteria
           c.Require(new ActionFilterCriteria("About"))
-			.Or(new ControllerFilterCriteria(typeof(AccountController)))
-			.And(new ActionFilterCriteria("Login"));
+            .Or(new ControllerFilterCriteria("Account"))
+            .And(new ActionFilterCriteria("Login"));
         });
       });
 
       // Replace default filter provider by custom from FluentFilters library
       Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionExtensions.Replace(services, ServiceDescriptor.Singleton<IFilterProvider, FluentFilterFilterProvider>());
       //...
-	}
+    }
     //...
   }
 }

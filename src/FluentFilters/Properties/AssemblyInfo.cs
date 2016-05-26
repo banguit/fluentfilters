@@ -24,9 +24,9 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("FluentFilters")]
-[assembly: AssemblyDescription("Library for ASP.NET Core, that will add support of criterias for global action filters.")]
+[assembly: AssemblyDescription("Library for ASP.NET Core, that will add support of criteria for global action filters.")]
 [assembly: AssemblyProduct("FluentFilters")]
-[assembly: AssemblyCopyright("Copyright (c) Dmytro Antonenko Antonenko 2016")]
+[assembly: AssemblyCopyright("Copyright (c) Dmytro Antonenko 2016")]
 
 // Setting ComVisible to false makes the types in this assembly not visible
 // to COM components.  If you need to access a type in this assembly from

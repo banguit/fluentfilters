@@ -2,7 +2,7 @@
   "title": "FluentFilters",
   "version": "0.3.0-beta",
   "authors": ["Dmytro Antonenko"],
-  "description": "Library for ASP.NET Core, that will add support of criterias for global action filters.",
+  "description": "Library for ASP.NET Core, that will add support of criteria for global action filters.",
 
   "dependencies": {
     "Microsoft.AspNetCore.Mvc.Core": "1.0.0-rc2-final",

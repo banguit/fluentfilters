@@ -1,5 +1,7 @@
 # Fluent Filters for ASP.NET Core
 
+ASP.NET Core have ability to register filters globally. It's works great, but sometimes it would be nice to specify conditions for filter execution and FluentFlters will help with this task.
+
 ###Install package
 For ASP.NET Core Web Application you should use FluentFilter version 0.3.* and higher. Currently latest version 0.3.0-beta.
 To install the latest package you can use Nuget Package Manager in Visual Studio or specify dependency in project.json file as shown below and call for package restore.

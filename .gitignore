@@ -2,9 +2,8 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/.git
-/.vs
-/bin
-/obj
-/project.lock.json
-
+.git
+.vs
+bin
+obj
+project.lock.json

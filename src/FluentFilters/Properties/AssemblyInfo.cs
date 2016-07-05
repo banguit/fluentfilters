@@ -26,6 +26,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("FluentFilters")]
 [assembly: AssemblyDescription("Library for ASP.NET Core, that will add support of criteria for global action filters.")]
 [assembly: AssemblyProduct("FluentFilters")]
+[assembly: AssemblyVersion("0.3.0")]
 [assembly: AssemblyCopyright("Copyright (c) Dmytro Antonenko 2016")]
 
 // Setting ComVisible to false makes the types in this assembly not visible

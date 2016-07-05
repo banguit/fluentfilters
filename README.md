@@ -122,7 +122,7 @@ if( IsFreeAccountFilterCriteria() || area == "Blog" ||
 ```
 
 ###Implementation of custom criteria
-To create a custom criterion you should inherit your class from the FluentFilters.IFilterCriteria interface and implement only one method Match with logic to making decision about filter execution. As example, look to the source code for ActionFilterCriteria:nly one method Match. For example, see the source code for ActionFilterCriteria:
+To create a custom criterion you should inherit your class from the FluentFilters.IFilterCriteria interface and implement only one method Match with logic to making decision about filter execution. As example, look to the source code for ActionFilterCriteria: 
 ```csharp
 public class ActionFilterCriteria : IFilterCriteria
 {

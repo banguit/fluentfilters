@@ -48,7 +48,7 @@ namespace DotNetCoreWebApp
       });
 
       // Replace default filter provider by custom from FluentFilters library
-      Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionExtensions.Replace(services, ServiceDescriptor.Singleton<IFilterProvider, FluentFilterFilterProvider>());
+      Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions.Replace(services, ServiceDescriptor.Singleton<IFilterProvider, FluentFilterFilterProvider>());
       //...
     }
     //...

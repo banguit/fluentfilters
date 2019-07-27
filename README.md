@@ -1,8 +1,10 @@
+[![Downloads](https://img.shields.io/nuget/dt/FluentFilters.svg)](https://www.nuget.org/packages/FluentFilters/)
+
 # Fluent Filters for ASP.NET Core
 
 ASP.NET Core have ability to register filters globally. It's works great, but sometimes it would be nice to specify conditions for filter execution and FluentFlters will help with this task.
 
-###Install package
+### Install package
 For ASP.NET Core Web Application you should use FluentFilter version 0.3.* and higher. Currently the latest version 0.3.0.
 To install the latest package you can use Nuget Package Manager in Visual Studio or specify dependency in project.json file as shown below and call for package restore.
 
@@ -56,7 +58,7 @@ namespace DotNetCoreWebApp
 }
 ```
 
-###Registering filters
+### Registering filters
 To register filters with criteria, you need do it in usual way but calling extended methods Add or AddService. Below you can see signature of these methods.
 ```csharp
 // Register filter by instance
@@ -70,7 +72,7 @@ IFilterMetadata AddService(this FilterCollection collection, Type filterType, in
 ```
 
 
-###Specify conditions
+### Specify conditions
 To specify the conditions, you should set the chain of criteria for the filter at registration. Using criteria, you can set whether to execute a filter or not. The library already provides three criteria for use:
 
  * **ActionFilterCriteria** - filter by specified action 
@@ -121,7 +123,7 @@ if( IsFreeAccountFilterCriteria() || area == "Blog" ||
 }
 ```
 
-###Implementation of custom criteria
+### Implementation of custom criteria
 To create a custom criterion you should inherit your class from the FluentFilters.IFilterCriteria interface and implement only one method Match with logic to making decision about filter execution. As example, look to the source code for ActionFilterCriteria: 
 ```csharp
 public class ActionFilterCriteria : IFilterCriteria
@@ -156,4 +158,4 @@ public class ActionFilterCriteria : IFilterCriteria
 }
 ```
 
-Note: If you are looking for FluentFilters for ASP.NET MVC2/3, you can find them [here](http://fluentfilters.codeplex.com/)
+`Note: If you are looking for FluentFilters for ASP.NET MVC2/3, you can find them [here](http://fluentfilters.codeplex.com/)`

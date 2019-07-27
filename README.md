@@ -1,6 +1,6 @@
 [![Downloads](https://img.shields.io/nuget/dt/FluentFilters.svg)](https://www.nuget.org/packages/FluentFilters/)
 
-# Fluent Filters for ASP.NET Core
+# FluentFilters for ASP.NET Core
 
 ASP.NET Core have ability to register filters globally. It's works great, but sometimes it would be nice to specify conditions for filter execution and FluentFlters will help with this task.
 

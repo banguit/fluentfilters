@@ -22,7 +22,6 @@ To install the latest package you can use Nuget Package Manager in Visual Studio
 }    
 ```
 
-
 ### Configuration:
 After installing the package to your ASP.NET Core Web Application you should replace default filter provider by custom from library. Your Startup class should looks like shown below:
 ```csharp
@@ -59,7 +58,7 @@ namespace DotNetCoreWebApp
 ```
 
 ### Registering filters
-To register filters with criteria, you need do it in usual way but calling extended methods Add or AddService. Below you can see signature of these methods.
+To register filters with criteria, you need to do it in the usual way, but call the extended methods Add or AddService. Below you can see the signature of these methods.
 ```csharp
 // Register filter by instance
 void Add(this FilterCollection collection, IFilterMetadata filter, Action<IFilterCriteriaBuilder> criteria);
@@ -70,7 +69,6 @@ IFilterMetadata Add(this FilterCollection collection, Type filterType, int order
 IFilterMetadata AddService(this FilterCollection collection, Type filterType, Action<IFilterCriteriaBuilder> criteria)
 IFilterMetadata AddService(this FilterCollection collection, Type filterType, int order, Action<IFilterCriteriaBuilder> criteria)
 ```
-
 
 ### Specify conditions
 To specify the conditions, you should set the chain of criteria for the filter at registration. Using criteria, you can set whether to execute a filter or not. The library already provides three criteria for use:
@@ -107,7 +105,7 @@ option.Filters.Add(typeof(DisplayTopBannerFilterAttribute), c =>
 });
 ```
 
-If using the C# language, then the code above can be understood as (like pseudocode):
+In pseudocode code above could be described as following:
 ```csharp
 if( IsFreeAccountFilterCriteria() || area == "Blog" || 
     (area == "Forum" && IsMemberFilterCriteria()) ) 
@@ -123,8 +121,8 @@ if( IsFreeAccountFilterCriteria() || area == "Blog" ||
 }
 ```
 
-### Implementation of custom criteria
-To create a custom criterion you should inherit your class from the FluentFilters.IFilterCriteria interface and implement only one method Match with logic to making decision about filter execution. As example, look to the source code for ActionFilterCriteria: 
+### Custom criteria implementation
+To create a custom criterion you should inherit your class from the FluentFilters.IFilterCriteria interface and implement only one method Match. This method returns boolean based on your conditional logic. It could be useful if you need to execute filter based on your application state, data in some datasource, specific customer request, etc. As example, look to the source code for ActionFilterCriteria implementation: 
 ```csharp
 public class ActionFilterCriteria : IFilterCriteria
 {
@@ -158,4 +156,4 @@ public class ActionFilterCriteria : IFilterCriteria
 }
 ```
 
-`Note: If you are looking for FluentFilters for ASP.NET MVC2/3, you can find them [here](http://fluentfilters.codeplex.com/)`
+## `NOTE: If you are looking for FluentFilters for ASP.NET MVC2/3, you can find it on fluentfilters.codeplex.com`

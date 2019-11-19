@@ -62,10 +62,10 @@ To register filters with criteria, you need to do it in the usual way, but call 
 void Add(this FilterCollection collection, IFilterMetadata filter, Action<IFilterCriteriaBuilder> criteria);
 
 // Register filter by type
-IFilterMetadata Add(this FilterCollection collection, Type filterType, Action<IFilterCriteriaBuilder> criteria)
-IFilterMetadata Add(this FilterCollection collection, Type filterType, int order, Action<IFilterCriteriaBuilder> criteria)
-IFilterMetadata AddService(this FilterCollection collection, Type filterType, Action<IFilterCriteriaBuilder> criteria)
-IFilterMetadata AddService(this FilterCollection collection, Type filterType, int order, Action<IFilterCriteriaBuilder> criteria)
+IFilterMetadata Add(this FilterCollection collection, Type filterType, Action<IFilterCriteriaBuilder> criteria);
+IFilterMetadata Add(this FilterCollection collection, Type filterType, int order, Action<IFilterCriteriaBuilder> criteria);
+IFilterMetadata AddService(this FilterCollection collection, Type filterType, Action<IFilterCriteriaBuilder> criteria);
+IFilterMetadata AddService(this FilterCollection collection, Type filterType, int order, Action<IFilterCriteriaBuilder> criteria);
 ```
 
 ### Specify conditions
